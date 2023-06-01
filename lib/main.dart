@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial_1/home_page.dart';
+import 'package:flutter_tutorial_1/pages/home_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,6 +13,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
     title: "MyApp",
       home: HomePage(),
+      themeMode: ThemeMode.light,
+      theme: ThemeData(
+        primarySwatch: Colors.green),
+      //darkTheme: ThemeData(
+        //brightness: Brightness.dark
+      //),
     );
   }
 }
